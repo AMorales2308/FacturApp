@@ -1,2 +1,2 @@
 # FacturApp
-Sistema de facturación y seguimiento de inventario para eepresas.+
+Sistema de facturación y seguimiento de inventario para empresas.
