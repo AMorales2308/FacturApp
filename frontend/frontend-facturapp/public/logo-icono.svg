@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
   <!-- Fondo con el color solicitado -->
-  <rect width="500" height="500" rx="32" fill="#eaf3de50"/>
+  <rect width="500" height="500" rx="32" fill="#EAF3DE"/>
 
   <!-- Iso / Icono Principal -->
   <g transform="translate(-175, -140) scale(1.7)">

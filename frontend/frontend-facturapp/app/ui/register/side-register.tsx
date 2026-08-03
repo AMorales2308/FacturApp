@@ -1,6 +1,3 @@
-import Link from 'next/link';
-import NavLinks from '@/app/ui/dashboard/nav-links';
-import AcmeLogo from '@/app/ui/acme-logo';
 import { CheckIcon } from '@heroicons/react/24/outline';
 import FacturAppLogo from '@/app/ui/facturapp-logo';
 import '@/app/ui/css/modules.css'
@@ -21,11 +18,11 @@ export default function SideNav() {
         <div className="flex flex-col space-y-2 text-lg color-text">
           <div className="flex flex-row space-x-2">
             <CheckIcon className="flex h-6 w-6" />
-            <p>Facturación</p>
+            <p className="color-text">Facturación</p>
           </div>
           <div className="flex flex-row space-x-2">
             <CheckIcon className="flex h-6 w-6" />
-            <p>Control de inventario</p>
+            <p className="color-text">Control de inventario</p>
           </div>
         </div>
       </div>
