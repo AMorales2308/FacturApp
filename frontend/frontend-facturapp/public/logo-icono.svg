@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Fondo con el color solicitado -->
+  <rect width="500" height="500" rx="32" fill="#EAF3DE"/>
+
+  <!-- Iso / Icono Principal -->
+  <g transform="translate(-175, -140) scale(1.7)">
+    <!-- Sombra suave en la base -->
+    <ellipse cx="250" cy="355" rx="90" ry="12" fill="#1A3322" opacity="0.12"/>
+
+    <!-- FACTURA (Emerge desde el interior de la caja) -->
+    <g id="factura">
+      <!-- Hoja Principal -->
+      <rect x="205" y="105" width="90" height="155" rx="8" fill="#FFFFFF"/>
+      
+      <!-- Encabezado de la factura -->
+      <path d="M 205 113 C 205 108.5, 208.5 105, 213 105 L 287 105 C 291.5 105, 295 108.5, 295 113 L 295 140 L 205 140 Z" fill="#1A3322"/>
+      
+      <!-- Detalle encabezado -->
+      <circle cx="223" cy="122.5" r="3.5" fill="#EAF3DE"/>
+      <rect x="234" y="120" width="45" height="5" rx="2.5" fill="#EAF3DE"/>
+
+      <!-- Líneas de ítems facturados -->
+      <rect x="220" y="156" width="60" height="5" rx="2.5" fill="#1A3322" opacity="0.75"/>
+      <rect x="220" y="168" width="40" height="4" rx="2" fill="#3D6E4C" opacity="0.5"/>
+      <rect x="220" y="178" width="50" height="4" rx="2" fill="#3D6E4C" opacity="0.5"/>
+
+      <!-- Línea punteada de total -->
+      <line x1="220" y1="194" x2="280" y2="194" stroke="#1A3322" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.4"/>
+
+      <!-- Bloques de Total -->
+      <rect x="220" y="204" width="24" height="6" rx="3" fill="#3D6E4C"/>
+      <rect x="256" y="204" width="24" height="6" rx="3" fill="#1A3322"/>
+    </g>
+
+    <!-- CAJA DE INVENTARIO (Frente superpuesto) -->
+    <g id="caja">
+      <!-- Tapa Izquierda Abierta -->
+      <path d="M 170 230 L 250 190 L 205 170 L 125 210 Z" fill="#3D6E4C"/>
+      
+      <!-- Tapa Derecha Abierta -->
+      <path d="M 330 230 L 250 190 L 295 170 L 375 210 Z" fill="#4A825B"/>
+
+      <!-- Cara Frontal Izquierda -->
+      <path d="M 170 230 L 250 270 L 250 340 L 170 300 Z" fill="#1A3322"/>
+
+      <!-- Cara Frontal Derecha -->
+      <path d="M 250 270 L 330 230 L 330 300 L 250 340 Z" fill="#294D35"/>
+    </g>
+  </g>
+</svg>
