@@ -3,17 +3,17 @@ name: CI - Frontend
 on:
   push:
     branches: [main]
-    paths: ["frontend/frontend-facturapp/**"]
+    paths: ["frontend/**"]
   pull_request:
     branches: [main]
-    paths: ["frontend/frontend-facturapp/**"]
+    paths: ["frontend/**"]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: frontend
+        working-directory: frontend/frontend-facturapp
     steps:
       - uses: actions/checkout@v4
 
@@ -26,7 +26,7 @@ jobs:
         with:
           node-version: "24"
           cache: "pnpm"
-          cache-dependency-path: frontend/pnpm-lock.yaml
+          cache-dependency-path: frontend/fronted-facturapp/pnpm-lock.yaml
 
       - run: pnpm install --frozen-lockfile
       - run: pnpm --if-present lint
