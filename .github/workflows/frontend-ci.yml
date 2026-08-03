@@ -6,7 +6,7 @@ on:
     paths: ["frontend/frontend-facturapp/**"]
   pull_request:
     branches: [main]
-    paths: ["frontend/**"]
+    paths: ["frontend/frontend-facturapp/**"]
 
 jobs:
   build:
